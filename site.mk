@@ -1,12 +1,11 @@
-GLUON_SITE_PACKAGES := \
-	gluon-mesh-batman-adv-15 \
-	gluon-authorized-keys \
-	gluon-lock-password \
-	gluon-radvd \
-	gluon-setup-mode \
-	gluon-status-page \
-	iwinfo \
-	haveged
+GLUON_FEATURES := \
+	authorized-keys \
+	lock-password \
+	mesh-batman-adv-15 \
+	radvd \
+	status-page
+
+GLUON_SITE_PACKAGES := iwinfo haveged
 
 
 DEFAULT_GLUON_RELEASE := 0.10~exp$(shell date '+%Y%m%d')
